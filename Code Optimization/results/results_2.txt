@@ -1,0 +1,131 @@
+hiiii
+Timer unit: 1e-07 s
+
+Total time: 5.21785 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: model at line 23
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    23                                           @profile_each_line
+    24                                           def model():
+    25         1       3154.0   3154.0      0.0      sys.stdout=open("results_2.txt","w")
+    26         1         24.0     24.0      0.0      testing = ["Destination Port","Flow Duration","Total Fwd Packets","Total Backward Packets",
+    27         1         39.0     39.0      0.0      "Total Length of Fwd Packets","Total Length of Bwd Packets","Fwd Packet Length Max",
+    28         1         25.0     25.0      0.0      "Fwd Packet Length Min","Fwd Packet Length Mean","Fwd Packet Length Std","Bwd Packet Length Max",
+    29         1         15.0     15.0      0.0      "Bwd Packet Length Min","Bwd Packet Length Mean","Bwd Packet Length Std","Flow Bytes/s",
+    30         1         15.0     15.0      0.0      "Flow Packets/s","Flow IAT Mean","Flow IAT Std","Flow IAT Max","Flow IAT Min","Fwd IAT Total",
+    31         1         15.0     15.0      0.0      "Fwd IAT Mean","Fwd IAT Std","Fwd IAT Max","Fwd IAT Min","Bwd IAT Total","Bwd IAT Mean",
+    32         1         15.0     15.0      0.0      "Bwd IAT Std","Bwd IAT Max","Bwd IAT Min","Fwd PSH Flags","Bwd PSH Flags","Fwd URG Flags",
+    33         1         15.0     15.0      0.0      "Bwd URG Flags","Fwd Header length","Bwd Header Length","Fwd Packets/s","Bwd Packets/s",
+    34         1         14.0     14.0      0.0      "Min Packet Length","Max Packet Length","Packet Length Mean","Packet Length Std",
+    35         1         15.0     15.0      0.0      "Packet Length Variance","FIN Flag Count","SYN Flag Count","RST Flag Count","PSH Flag Count",
+    36         1         15.0     15.0      0.0      "ACK Flag Count","URG Flag Count","CWE Flag Count","ECE Flag Count","Down/Up Ratio",
+    37         1         16.0     16.0      0.0      "Average Packet Size","Avg Fwd Segment Size","Avg Bwd Segment Size","Fwd Header Length",
+    38         1         15.0     15.0      0.0      "Fwd Avg Bytes/Bulk","Fwd Avg Packets/Bulk","Fwd Avg Bulk Rate","Bwd Avg Bytes/Bulk",
+    39         1         15.0     15.0      0.0      "Bwd Avg Packets/Bulk","Bwd Avg Bulk Rate","Subflow Fwd Packets","Subflow Fwd Bytes",
+    40         1         15.0     15.0      0.0      "Subflow Bwd Packets","Subflow Bwd Bytes","Init Win bytes forward","Init Win bytes backward",
+    41         1         16.0     16.0      0.0      "act data pkt fwd","min seg size forward","Active Mean","Active Std","Active Max",
+    42         1         24.0     24.0      0.0      "Active Min","Idle Mean","Idle Std","Idle Max","Idle Min","Label"]
+    43                                               #print (len(testing))
+    44         1         31.0     31.0      0.0      import collections
+    45                                               #print ([item for item, count in collections.Counter(testing).items() if count > 1])
+    46                                           
+    47         1         23.0     23.0      0.0      import random
+    48                                               
+    49         1   13387414.0 13387414.0     25.7      df = pd.read_csv("train.csv",header=None,names = testing)
+    50                                               
+    51                                              # df[~df.isin([np.isfinite]).any(1)]
+    52         1   14301704.0 14301704.0     27.4      df[~df.isin([np.inf,-np.inf,np.nan]).any(1)]
+    53                                           
+    54                                           
+    55                                               #print(df.head())
+    56                                           
+    57         1    6766845.0 6766845.0     13.0      df_test = pd.read_csv("testt.csv", header=None,names = testing)
+    58                                               #df_test[~df_test.isin([np.isfinite]).any(1)]
+    59         1    9937324.0 9937324.0     19.0      df_test[~df_test.isin([np.inf,-np.inf,np.nan]).any(1)]
+    60                                           
+    61                                           
+    62                                           
+    63                                           
+    64         1         38.0     38.0      0.0      dtype={'Bwd Packet Length Std': float}
+    65         1         18.0     18.0      0.0      dtype={'Flow Bytes/s': float}
+    66                                              # print ("hi3")
+    67         1       2663.0   2663.0      0.0      labeldf=df['Label']
+    68         1       1120.0   1120.0      0.0      labeldf_test=df_test['Label']
+    69                                           
+    70                                               # change the label column
+    71         1     454973.0 454973.0      0.9      newlabeldf=labeldf.replace({ 'BENIGN' : 0, 'DDoS' : 1 })
+    72         1     183460.0 183460.0      0.4      newlabeldf_test=labeldf_test.replace({ 'BENIGN' : 0, 'DDoS' : 1 })
+    73                                               # put the new label column back
+    74                                           
+    75         1         26.0     26.0      0.0      newdf = df
+    76         1         15.0     15.0      0.0      newdf_test = df_test
+    77                                           
+    78         1      11675.0  11675.0      0.0      newdf['Label'] = newlabeldf
+    79         1      21958.0  21958.0      0.0      newdf_test['Label'] = newlabeldf_test
+    80                                           
+    81                                           
+    82                                           
+    83                                               #print(newdf['label'].value_counts())
+    84                                           
+    85         1         26.0     26.0      0.0      to_drop_DoS = [0,1]
+    86                                           
+    87         1    1367406.0 1367406.0      2.6      DoS_df=newdf[newdf['Label'].isin(to_drop_DoS)]
+    88                                           
+    89                                               #test
+    90         1     738784.0 738784.0      1.4      DoS_df_test=newdf_test[newdf_test['Label'].isin(to_drop_DoS)]
+    91                                           
+    92         1     193368.0 193368.0      0.4      DoS_df = DoS_df.sample(7000)
+    93         1      94626.0  94626.0      0.2      DoS_df_test = DoS_df_test.sample(3000)
+    94                                           
+    95         1      34888.0  34888.0      0.1      X_DoS = DoS_df.drop('Label',1)
+    96         1       1583.0   1583.0      0.0      Y_DoS = DoS_df.Label
+    97                                           
+    98         1      26566.0  26566.0      0.1      X_DoS_test = DoS_df_test.drop('Label',1)
+    99         1       3021.0   3021.0      0.0      Y_DoS_test = DoS_df_test.Label
+   100                                           
+   101         1       1236.0   1236.0      0.0      colNames=list(X_DoS)
+   102         1       1218.0   1218.0      0.0      colNames_test=list(X_DoS_test)
+   103         1     105294.0 105294.0      0.2      X_DoS=np.nan_to_num(X_DoS)
+   104                                              # print(X_DoS)
+   105         1       2750.0   2750.0      0.0      Y_DoS=np.nan_to_num(Y_DoS)
+   106         1        251.0    251.0      0.0      print("hiiii")
+   107         1     262621.0 262621.0      0.5      scaler1 = preprocessing.StandardScaler().fit(X_DoS)
+   108         1      42869.0  42869.0      0.1      X_DoS=scaler1.transform(X_DoS) 
+   109                                           
+   110         1     287122.0 287122.0      0.6      scaler5 = preprocessing.StandardScaler().fit(X_DoS_test)
+   111         1     195348.0 195348.0      0.4      X_DoS_test=scaler5.transform(X_DoS_test) 
+   112                                           
+   113                                              # print("Hi")
+   114                                           
+   115         1         28.0     28.0      0.0      C_values = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30, 100]  
+   116         1         18.0     18.0      0.0      gamma_values = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30, 100]
+   117                                           
+   118         1         15.0     15.0      0.0      best_score = 0  
+   119         1         18.0     18.0      0.0      best_params = {'C': None, 'gamma': None}
+   120                                           
+   121        10        176.0     17.6      0.0      for C in C_values:  
+   122        90       1787.0     19.9      0.0          for gamma in gamma_values:
+   123                                                       #clf_Rand_DoS=RandomForestClassifier(n_estimators=10,n_jobs=2)
+   124        81      18707.0    231.0      0.0              clf_SVM_DoS=SVC(C=C,gamma=gamma)
+   125                                                       #clf_NN_DoS=MLPClassifier(hidden_layer_sizes=(100, ), activation='relu', solver='adam', alpha=0.0001, batch_size='auto', learning_rate='constant', learning_rate_init=0.001, power_t=0.5, max_iter=200, shuffle=True, random_state=None, tol=0.0001, verbose=False, warm_start=False, momentum=0.9, nesterovs_momentum=True, early_stopping=False, validation_fraction=0.1, beta_1=0.9, beta_2=0.999, epsilon=1e-08, n_iter_no_change=10)
+   126                                           
+   127                                                       #clf_voting_DoS = VotingClassifier(estimators=[('random', clf_Rand_DoS), ('svm', clf_SVM_DoS),('nn',clf_NN_DoS)], voting='hard')
+   128                                                     #  print("Tracing Code 2")
+   129        81    3702469.0  45709.5      7.1              X_DoS=np.nan_to_num(X_DoS)
+   130        81      20986.0    259.1      0.0              Y_DoS=np.nan_to_num(Y_DoS)
+   131                                                       #clf_NN_DoS.fit(X_DoS, Y_DoS.astype(int))
+   132                                                       #clf_voting_DoS.fit(X_DoS, Y_DoS.astype(int))
+   133                                                       #Y_DoS_pred=clf_voting_DoS.predict(X_DoS_test.astype(int))
+   134                                                       #Y_DoS_pred=clf_NN_DoS.predict(X_DoS_test.astype(int))
+   135        81       2550.0     31.5      0.0              def test():
+   136                                                           print("C:", C)
+   137                                                           print("Gamma:", gamma)
+   138                                                           accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   139                                                           print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   140                                                           precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   141                                                           print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   142                                                           recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   143                                                           print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
