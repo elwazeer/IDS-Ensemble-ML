@@ -1,0 +1,2077 @@
+hiiii
+C: 0.01
+Gamma: 0.01
+Accuracy: 0.71402 (+/- 0.02932)
+Precision: 1.00000 (+/- 0.00000)
+Recall: 0.18138 (+/- 0.08223)
+Timer unit: 1e-07 s
+
+Total time: 19.752 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        160.0    160.0      0.0                  print("C:", C)
+   138         1         49.0     49.0      0.0                  print("Gamma:", gamma)
+   139         1   63089653.0 63089653.0     31.9                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        914.0    914.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   64703271.0 64703271.0     32.8                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        813.0    813.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   69724369.0 69724369.0     35.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        773.0    773.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.01
+Gamma: 0.03
+Accuracy: 0.78634 (+/- 0.03442)
+Precision: 1.00000 (+/- 0.00000)
+Recall: 0.38842 (+/- 0.09771)
+Timer unit: 1e-07 s
+
+Total time: 18.588 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        160.0    160.0      0.0                  print("C:", C)
+   138         1         56.0     56.0      0.0                  print("Gamma:", gamma)
+   139         1   62522441.0 62522441.0     33.6                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        918.0    918.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   63243731.0 63243731.0     34.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        851.0    851.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   60110702.0 60110702.0     32.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        852.0    852.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.01
+Gamma: 0.1
+Accuracy: 0.80100 (+/- 0.03428)
+Precision: 1.00000 (+/- 0.00000)
+Recall: 0.43035 (+/- 0.09780)
+Timer unit: 1e-07 s
+
+Total time: 17.7596 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        150.0    150.0      0.0                  print("C:", C)
+   138         1         52.0     52.0      0.0                  print("Gamma:", gamma)
+   139         1   59256253.0 59256253.0     33.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        956.0    956.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   59032558.0 59032558.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        745.0    745.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   59304248.0 59304248.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        759.0    759.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.01
+Gamma: 0.3
+Accuracy: 0.88697 (+/- 0.04075)
+Precision: 0.89753 (+/- 0.05385)
+Recall: 0.76419 (+/- 0.11489)
+Timer unit: 1e-07 s
+
+Total time: 18.8503 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        156.0    156.0      0.0                  print("C:", C)
+   138         1         52.0     52.0      0.0                  print("Gamma:", gamma)
+   139         1   62305163.0 62305163.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1141.0   1141.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   63310216.0 63310216.0     33.6                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        934.0    934.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   62884553.0 62884553.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        773.0    773.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.01
+Gamma: 1
+Accuracy: 0.83965 (+/- 0.04493)
+Precision: 0.88589 (+/- 0.06796)
+Recall: 0.62108 (+/- 0.11771)
+Timer unit: 1e-07 s
+
+Total time: 16.5086 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        149.0    149.0      0.0                  print("C:", C)
+   138         1         49.0     49.0      0.0                  print("Gamma:", gamma)
+   139         1   55476612.0 55476612.0     33.6                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1021.0   1021.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   54338240.0 54338240.0     32.9                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        767.0    767.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   55267774.0 55267774.0     33.5                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1127.0   1127.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.01
+Gamma: 3
+Accuracy: 0.77999 (+/- 0.03987)
+Precision: 0.84963 (+/- 0.07976)
+Recall: 0.45031 (+/- 0.11024)
+Timer unit: 1e-07 s
+
+Total time: 16.7466 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        170.0    170.0      0.0                  print("C:", C)
+   138         1         83.0     83.0      0.0                  print("Gamma:", gamma)
+   139         1   56098721.0 56098721.0     33.5                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        814.0    814.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   55501925.0 55501925.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        901.0    901.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   55862408.0 55862408.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1006.0   1006.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.01
+Gamma: 10
+Accuracy: 0.77999 (+/- 0.03987)
+Precision: 0.84963 (+/- 0.07976)
+Recall: 0.45031 (+/- 0.11024)
+Timer unit: 1e-07 s
+
+Total time: 18.9638 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        144.0    144.0      0.0                  print("C:", C)
+   138         1         47.0     47.0      0.0                  print("Gamma:", gamma)
+   139         1   62811154.0 62811154.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        897.0    897.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   62606217.0 62606217.0     33.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1086.0   1086.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   64217102.0 64217102.0     33.9                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1090.0   1090.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.01
+Gamma: 30
+Accuracy: 0.77999 (+/- 0.03987)
+Precision: 0.84963 (+/- 0.07976)
+Recall: 0.45031 (+/- 0.11024)
+Timer unit: 1e-07 s
+
+Total time: 20.7786 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        156.0    156.0      0.0                  print("C:", C)
+   138         1         50.0     50.0      0.0                  print("Gamma:", gamma)
+   139         1   66913250.0 66913250.0     32.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1790.0   1790.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   73742428.0 73742428.0     35.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1703.0   1703.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   67125505.0 67125505.0     32.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        882.0    882.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.01
+Gamma: 100
+Accuracy: 0.77999 (+/- 0.03987)
+Precision: 0.84963 (+/- 0.07976)
+Recall: 0.45031 (+/- 0.11024)
+Timer unit: 1e-07 s
+
+Total time: 21.7597 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        163.0    163.0      0.0                  print("C:", C)
+   138         1         48.0     48.0      0.0                  print("Gamma:", gamma)
+   139         1   71257864.0 71257864.0     32.7                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        852.0    852.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   73677618.0 73677618.0     33.9                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1784.0   1784.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   72657902.0 72657902.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        725.0    725.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 0.01
+Accuracy: 0.81468 (+/- 0.04470)
+Precision: 1.00000 (+/- 0.00000)
+Recall: 0.46954 (+/- 0.12722)
+Timer unit: 1e-07 s
+
+Total time: 16.4444 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        142.0    142.0      0.0                  print("C:", C)
+   138         1         52.0     52.0      0.0                  print("Gamma:", gamma)
+   139         1   54177018.0 54177018.0     32.9                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1536.0   1536.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   55140915.0 55140915.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        961.0    961.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   55122348.0 55122348.0     33.5                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        806.0    806.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 0.03
+Accuracy: 0.82435 (+/- 0.04312)
+Precision: 0.99796 (+/- 0.01224)
+Recall: 0.49819 (+/- 0.12088)
+Timer unit: 1e-07 s
+
+Total time: 15.0531 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        256.0    256.0      0.0                  print("C:", C)
+   138         1        120.0    120.0      0.0                  print("Gamma:", gamma)
+   139         1   49894345.0 49894345.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1171.0   1171.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   49652584.0 49652584.0     33.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1189.0   1189.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   50980364.0 50980364.0     33.9                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        846.0    846.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 0.1
+Accuracy: 0.93499 (+/- 0.02141)
+Precision: 0.90876 (+/- 0.04514)
+Recall: 0.90551 (+/- 0.04950)
+Timer unit: 1e-07 s
+
+Total time: 14.4429 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        157.0    157.0      0.0                  print("C:", C)
+   138         1         51.0     51.0      0.0                  print("Gamma:", gamma)
+   139         1   48594426.0 48594426.0     33.6                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        871.0    871.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   48643405.0 48643405.0     33.7                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        933.0    933.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   47188256.0 47188256.0     32.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        827.0    827.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 0.3
+Accuracy: 0.93333 (+/- 0.01964)
+Precision: 0.91063 (+/- 0.04434)
+Recall: 0.89788 (+/- 0.04110)
+Timer unit: 1e-07 s
+
+Total time: 12.765 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        151.0    151.0      0.0                  print("C:", C)
+   138         1         51.0     51.0      0.0                  print("Gamma:", gamma)
+   139         1   41416576.0 41416576.0     32.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        983.0    983.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   42341995.0 42341995.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1047.0   1047.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   43888003.0 43888003.0     34.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1479.0   1479.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 1
+Accuracy: 0.91767 (+/- 0.02585)
+Precision: 0.91411 (+/- 0.04641)
+Recall: 0.84447 (+/- 0.07330)
+Timer unit: 1e-07 s
+
+Total time: 13.4299 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        161.0    161.0      0.0                  print("C:", C)
+   138         1         49.0     49.0      0.0                  print("Gamma:", gamma)
+   139         1   42099255.0 42099255.0     31.3                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        817.0    817.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   43543207.0 43543207.0     32.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1983.0   1983.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   48652680.0 48652680.0     36.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        877.0    877.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 3
+Accuracy: 0.90566 (+/- 0.02657)
+Precision: 0.91091 (+/- 0.04730)
+Recall: 0.81011 (+/- 0.08197)
+Timer unit: 1e-07 s
+
+Total time: 14.2492 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        149.0    149.0      0.0                  print("C:", C)
+   138         1         54.0     54.0      0.0                  print("Gamma:", gamma)
+   139         1   47048326.0 47048326.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1736.0   1736.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   47887806.0 47887806.0     33.6                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        919.0    919.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   47551768.0 47551768.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1165.0   1165.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 10
+Accuracy: 0.90433 (+/- 0.02621)
+Precision: 0.91053 (+/- 0.04741)
+Recall: 0.80630 (+/- 0.08083)
+Timer unit: 1e-07 s
+
+Total time: 15.1802 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        160.0    160.0      0.0                  print("C:", C)
+   138         1         53.0     53.0      0.0                  print("Gamma:", gamma)
+   139         1   50896803.0 50896803.0     33.5                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        903.0    903.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   50445446.0 50445446.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        843.0    843.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   50457300.0 50457300.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        800.0    800.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 30
+Accuracy: 0.90433 (+/- 0.02621)
+Precision: 0.91053 (+/- 0.04741)
+Recall: 0.80630 (+/- 0.08083)
+Timer unit: 1e-07 s
+
+Total time: 16.8084 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        149.0    149.0      0.0                  print("C:", C)
+   138         1         58.0     58.0      0.0                  print("Gamma:", gamma)
+   139         1   55490165.0 55490165.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        878.0    878.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   55860314.0 55860314.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        804.0    804.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   56730564.0 56730564.0     33.8                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        851.0    851.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.03
+Gamma: 100
+Accuracy: 0.90433 (+/- 0.02621)
+Precision: 0.91053 (+/- 0.04741)
+Recall: 0.80630 (+/- 0.08083)
+Timer unit: 1e-07 s
+
+Total time: 18.475 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        149.0    149.0      0.0                  print("C:", C)
+   138         1         49.0     49.0      0.0                  print("Gamma:", gamma)
+   139         1   61556547.0 61556547.0     33.3                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1124.0   1124.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   61210563.0 61210563.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1184.0   1184.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   61979915.0 61979915.0     33.5                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        807.0    807.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 0.01
+Accuracy: 0.83535 (+/- 0.04251)
+Precision: 0.99661 (+/- 0.01372)
+Recall: 0.53063 (+/- 0.12233)
+Timer unit: 1e-07 s
+
+Total time: 12.7923 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        147.0    147.0      0.0                  print("C:", C)
+   138         1         52.0     52.0      0.0                  print("Gamma:", gamma)
+   139         1   42712399.0 42712399.0     33.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        923.0    923.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   42747092.0 42747092.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        967.0    967.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   42460868.0 42460868.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        857.0    857.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 0.03
+Accuracy: 0.96333 (+/- 0.01520)
+Precision: 0.91330 (+/- 0.03800)
+Recall: 0.98951 (+/- 0.02476)
+Timer unit: 1e-07 s
+
+Total time: 11.8529 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        153.0    153.0      0.0                  print("C:", C)
+   138         1         52.0     52.0      0.0                  print("Gamma:", gamma)
+   139         1   39155492.0 39155492.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        990.0    990.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   40019280.0 40019280.0     33.8                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1654.0   1654.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   39349120.0 39349120.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       2241.0   2241.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 0.1
+Accuracy: 0.95533 (+/- 0.01439)
+Precision: 0.91602 (+/- 0.04171)
+Recall: 0.96089 (+/- 0.02158)
+Timer unit: 1e-07 s
+
+Total time: 8.50378 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        160.0    160.0      0.0                  print("C:", C)
+   138         1         55.0     55.0      0.0                  print("Gamma:", gamma)
+   139         1   28170330.0 28170330.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        903.0    903.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   29137782.0 29137782.0     34.3                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        815.0    815.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   27726872.0 27726872.0     32.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        881.0    881.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 0.3
+Accuracy: 0.94566 (+/- 0.01695)
+Precision: 0.91448 (+/- 0.04288)
+Recall: 0.93223 (+/- 0.02641)
+Timer unit: 1e-07 s
+
+Total time: 7.73933 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        153.0    153.0      0.0                  print("C:", C)
+   138         1        192.0    192.0      0.0                  print("Gamma:", gamma)
+   139         1   25917385.0 25917385.0     33.5                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        766.0    766.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   25723382.0 25723382.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        740.0    740.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   25749834.0 25749834.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        879.0    879.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 1
+Accuracy: 0.93200 (+/- 0.01742)
+Precision: 0.91776 (+/- 0.04519)
+Recall: 0.88550 (+/- 0.04503)
+Timer unit: 1e-07 s
+
+Total time: 8.51119 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        143.0    143.0      0.0                  print("C:", C)
+   138         1         47.0     47.0      0.0                  print("Gamma:", gamma)
+   139         1   28340070.0 28340070.0     33.3                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        799.0    799.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   28331604.0 28331604.0     33.3                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1302.0   1302.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   28436963.0 28436963.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        927.0    927.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 3
+Accuracy: 0.92300 (+/- 0.02219)
+Precision: 0.91564 (+/- 0.04451)
+Recall: 0.85976 (+/- 0.07214)
+Timer unit: 1e-07 s
+
+Total time: 9.21738 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        153.0    153.0      0.0                  print("C:", C)
+   138         1         66.0     66.0      0.0                  print("Gamma:", gamma)
+   139         1   31169670.0 31169670.0     33.8                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        864.0    864.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   30846016.0 30846016.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1480.0   1480.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   30154772.0 30154772.0     32.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        779.0    779.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 10
+Accuracy: 0.91900 (+/- 0.02352)
+Precision: 0.91454 (+/- 0.04566)
+Recall: 0.84829 (+/- 0.07096)
+Timer unit: 1e-07 s
+
+Total time: 10.2708 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        156.0    156.0      0.0                  print("C:", C)
+   138         1         50.0     50.0      0.0                  print("Gamma:", gamma)
+   139         1   34290926.0 34290926.0     33.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        912.0    912.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   34400456.0 34400456.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        952.0    952.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   34014026.0 34014026.0     33.1                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        818.0    818.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 30
+Accuracy: 0.91900 (+/- 0.02352)
+Precision: 0.91454 (+/- 0.04566)
+Recall: 0.84829 (+/- 0.07096)
+Timer unit: 1e-07 s
+
+Total time: 11.1763 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        155.0    155.0      0.0                  print("C:", C)
+   138         1         53.0     53.0      0.0                  print("Gamma:", gamma)
+   139         1   37398580.0 37398580.0     33.5                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        827.0    827.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   37194358.0 37194358.0     33.3                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        887.0    887.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   37167337.0 37167337.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1015.0   1015.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.1
+Gamma: 100
+Accuracy: 0.91900 (+/- 0.02352)
+Precision: 0.91454 (+/- 0.04566)
+Recall: 0.84829 (+/- 0.07096)
+Timer unit: 1e-07 s
+
+Total time: 11.6964 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        174.0    174.0      0.0                  print("C:", C)
+   138         1         69.0     69.0      0.0                  print("Gamma:", gamma)
+   139         1   38976803.0 38976803.0     33.3                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1377.0   1377.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   39088034.0 39088034.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        736.0    736.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   38896032.0 38896032.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        728.0    728.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 0.01
+Accuracy: 0.96467 (+/- 0.01554)
+Precision: 0.91358 (+/- 0.03820)
+Recall: 0.99333 (+/- 0.01914)
+Timer unit: 1e-07 s
+
+Total time: 10.7829 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        291.0    291.0      0.0                  print("C:", C)
+   138         1         70.0     70.0      0.0                  print("Gamma:", gamma)
+   139         1   34430217.0 34430217.0     31.9                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        857.0    857.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   35228233.0 35228233.0     32.7                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1208.0   1208.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   38167541.0 38167541.0     35.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        728.0    728.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 0.03
+Accuracy: 0.96533 (+/- 0.01554)
+Precision: 0.91524 (+/- 0.03985)
+Recall: 0.99333 (+/- 0.01914)
+Timer unit: 1e-07 s
+
+Total time: 6.89763 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        151.0    151.0      0.0                  print("C:", C)
+   138         1         69.0     69.0      0.0                  print("Gamma:", gamma)
+   139         1   23064907.0 23064907.0     33.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        967.0    967.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   22728619.0 22728619.0     33.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        802.0    802.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   23180011.0 23180011.0     33.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        733.0    733.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 0.1
+Accuracy: 0.96466 (+/- 0.01695)
+Precision: 0.91805 (+/- 0.04105)
+Recall: 0.98760 (+/- 0.02700)
+Timer unit: 1e-07 s
+
+Total time: 5.74384 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        153.0    153.0      0.0                  print("C:", C)
+   138         1         51.0     51.0      0.0                  print("Gamma:", gamma)
+   139         1   18943367.0 18943367.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        817.0    817.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   19192806.0 19192806.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        730.0    730.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   19299770.0 19299770.0     33.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        754.0    754.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 0.3
+Accuracy: 0.95600 (+/- 0.01486)
+Precision: 0.92145 (+/- 0.03996)
+Recall: 0.95611 (+/- 0.02121)
+Timer unit: 1e-07 s
+
+Total time: 6.38247 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        160.0    160.0      0.0                  print("C:", C)
+   138         1         50.0     50.0      0.0                  print("Gamma:", gamma)
+   139         1   21163728.0 21163728.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        913.0    913.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   21723481.0 21723481.0     34.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        728.0    728.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   20934512.0 20934512.0     32.8                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1082.0   1082.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 1
+Accuracy: 0.94434 (+/- 0.02085)
+Precision: 0.92046 (+/- 0.04554)
+Recall: 0.92079 (+/- 0.03532)
+Timer unit: 1e-07 s
+
+Total time: 7.60584 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        163.0    163.0      0.0                  print("C:", C)
+   138         1         49.0     49.0      0.0                  print("Gamma:", gamma)
+   139         1   24621041.0 24621041.0     32.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        861.0    861.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   26224417.0 26224417.0     34.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1078.0   1078.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   25209978.0 25209978.0     33.1                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        832.0    832.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 3
+Accuracy: 0.93700 (+/- 0.02202)
+Precision: 0.91881 (+/- 0.04575)
+Recall: 0.89979 (+/- 0.04706)
+Timer unit: 1e-07 s
+
+Total time: 8.11594 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        222.0    222.0      0.0                  print("C:", C)
+   138         1        121.0    121.0      0.0                  print("Gamma:", gamma)
+   139         1   27065138.0 27065138.0     33.3                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        775.0    775.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   27095988.0 27095988.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        852.0    852.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   26995572.0 26995572.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        743.0    743.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 10
+Accuracy: 0.93700 (+/- 0.02202)
+Precision: 0.91881 (+/- 0.04575)
+Recall: 0.89979 (+/- 0.04706)
+Timer unit: 1e-07 s
+
+Total time: 9.22754 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        277.0    277.0      0.0                  print("C:", C)
+   138         1         50.0     50.0      0.0                  print("Gamma:", gamma)
+   139         1   30509408.0 30509408.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        908.0    908.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   30893333.0 30893333.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        752.0    752.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   30869999.0 30869999.0     33.5                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        692.0    692.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 30
+Accuracy: 0.93700 (+/- 0.02202)
+Precision: 0.91881 (+/- 0.04575)
+Recall: 0.89979 (+/- 0.04706)
+Timer unit: 1e-07 s
+
+Total time: 10.1831 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        146.0    146.0      0.0                  print("C:", C)
+   138         1         49.0     49.0      0.0                  print("Gamma:", gamma)
+   139         1   33730219.0 33730219.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        902.0    902.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   34788773.0 34788773.0     34.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        755.0    755.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   33309071.0 33309071.0     32.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        745.0    745.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 0.3
+Gamma: 100
+Accuracy: 0.93700 (+/- 0.02202)
+Precision: 0.91881 (+/- 0.04575)
+Recall: 0.89979 (+/- 0.04706)
+Timer unit: 1e-07 s
+
+Total time: 10.5083 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        144.0    144.0      0.0                  print("C:", C)
+   138         1         54.0     54.0      0.0                  print("Gamma:", gamma)
+   139         1   34887623.0 34887623.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        786.0    786.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   35167397.0 35167397.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        718.0    718.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   35025464.0 35025464.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        739.0    739.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 0.01
+Accuracy: 0.96433 (+/- 0.01551)
+Precision: 0.91279 (+/- 0.03860)
+Recall: 0.99333 (+/- 0.01914)
+Timer unit: 1e-07 s
+
+Total time: 5.64587 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        146.0    146.0      0.0                  print("C:", C)
+   138         1         73.0     73.0      0.0                  print("Gamma:", gamma)
+   139         1   18720342.0 18720342.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        896.0    896.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   18811018.0 18811018.0     33.3                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        746.0    746.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   18924240.0 18924240.0     33.5                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1286.0   1286.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 0.03
+Accuracy: 0.96633 (+/- 0.01475)
+Precision: 0.91764 (+/- 0.03886)
+Recall: 0.99333 (+/- 0.01914)
+Timer unit: 1e-07 s
+
+Total time: 4.58783 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        165.0    165.0      0.0                  print("C:", C)
+   138         1         73.0     73.0      0.0                  print("Gamma:", gamma)
+   139         1   15394343.0 15394343.0     33.6                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        736.0    736.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   15153370.0 15153370.0     33.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        732.0    732.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   15327822.0 15327822.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1068.0   1068.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 0.1
+Accuracy: 0.96800 (+/- 0.01341)
+Precision: 0.92170 (+/- 0.03820)
+Recall: 0.99333 (+/- 0.01914)
+Timer unit: 1e-07 s
+
+Total time: 4.97379 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        134.0    134.0      0.0                  print("C:", C)
+   138         1         71.0     71.0      0.0                  print("Gamma:", gamma)
+   139         1   16593702.0 16593702.0     33.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        784.0    784.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   16599339.0 16599339.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        740.0    740.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   16541427.0 16541427.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1675.0   1675.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 0.3
+Accuracy: 0.96700 (+/- 0.01473)
+Precision: 0.92294 (+/- 0.03841)
+Recall: 0.98855 (+/- 0.01142)
+Timer unit: 1e-07 s
+
+Total time: 5.86374 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        177.0    177.0      0.0                  print("C:", C)
+   138         1         94.0     94.0      0.0                  print("Gamma:", gamma)
+   139         1   19748653.0 19748653.0     33.7                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        837.0    837.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   19553798.0 19553798.0     33.3                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        760.0    760.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   19332327.0 19332327.0     33.0                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        744.0    744.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 1
+Accuracy: 0.95234 (+/- 0.02022)
+Precision: 0.92219 (+/- 0.04499)
+Recall: 0.94369 (+/- 0.02338)
+Timer unit: 1e-07 s
+
+Total time: 6.80114 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        131.0    131.0      0.0                  print("C:", C)
+   138         1         46.0     46.0      0.0                  print("Gamma:", gamma)
+   139         1   22562083.0 22562083.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        831.0    831.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   22495033.0 22495033.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        733.0    733.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   22951847.0 22951847.0     33.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        723.0    723.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 3
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 7.54767 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        134.0    134.0      0.0                  print("C:", C)
+   138         1         60.0     60.0      0.0                  print("Gamma:", gamma)
+   139         1   24809984.0 24809984.0     32.9                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        912.0    912.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   25422184.0 25422184.0     33.7                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        732.0    732.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   25241990.0 25241990.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        731.0    731.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 10
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 8.58992 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        135.0    135.0      0.0                  print("C:", C)
+   138         1         47.0     47.0      0.0                  print("Gamma:", gamma)
+   139         1   28528862.0 28528862.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        785.0    785.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   28735200.0 28735200.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        757.0    757.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   28632142.0 28632142.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1281.0   1281.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 30
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 9.33892 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        132.0    132.0      0.0                  print("C:", C)
+   138         1         48.0     48.0      0.0                  print("Gamma:", gamma)
+   139         1   30233236.0 30233236.0     32.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        767.0    767.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   31634494.0 31634494.0     33.9                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        821.0    821.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   31518638.0 31518638.0     33.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1066.0   1066.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 1
+Gamma: 100
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 9.6152 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        158.0    158.0      0.0                  print("C:", C)
+   138         1         51.0     51.0      0.0                  print("Gamma:", gamma)
+   139         1   32602861.0 32602861.0     33.9                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1043.0   1043.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   32202821.0 32202821.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        805.0    805.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   31343049.0 31343049.0     32.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1221.0   1221.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 0.01
+Accuracy: 0.96600 (+/- 0.01485)
+Precision: 0.91683 (+/- 0.03894)
+Recall: 0.99333 (+/- 0.01914)
+Timer unit: 1e-07 s
+
+Total time: 3.46459 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        131.0    131.0      0.0                  print("C:", C)
+   138         1         73.0     73.0      0.0                  print("Gamma:", gamma)
+   139         1   11217649.0 11217649.0     32.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        741.0    741.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   11702641.0 11702641.0     33.8                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        741.0    741.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   11723203.0 11723203.0     33.8                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        727.0    727.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 0.03
+Accuracy: 0.96600 (+/- 0.01487)
+Precision: 0.91684 (+/- 0.03958)
+Recall: 0.99333 (+/- 0.01914)
+Timer unit: 1e-07 s
+
+Total time: 3.58376 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        132.0    132.0      0.0                  print("C:", C)
+   138         1         77.0     77.0      0.0                  print("Gamma:", gamma)
+   139         1   11954898.0 11954898.0     33.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        776.0    776.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   11943681.0 11943681.0     33.3                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1472.0   1472.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   11935416.0 11935416.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1102.0   1102.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 0.1
+Accuracy: 0.97034 (+/- 0.01503)
+Precision: 0.92361 (+/- 0.03820)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 4.54305 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        147.0    147.0      0.0                  print("C:", C)
+   138         1         96.0     96.0      0.0                  print("Gamma:", gamma)
+   139         1   15214214.0 15214214.0     33.5                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        780.0    780.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   15093227.0 15093227.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        711.0    711.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   15119914.0 15119914.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1406.0   1406.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 0.3
+Accuracy: 0.96834 (+/- 0.01404)
+Precision: 0.92406 (+/- 0.04029)
+Recall: 0.99142 (+/- 0.01334)
+Timer unit: 1e-07 s
+
+Total time: 5.814 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        199.0    199.0      0.0                  print("C:", C)
+   138         1         80.0     80.0      0.0                  print("Gamma:", gamma)
+   139         1   19323109.0 19323109.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1129.0   1129.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   19397495.0 19397495.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        748.0    748.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   19416511.0 19416511.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        731.0    731.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 1
+Accuracy: 0.95500 (+/- 0.02217)
+Precision: 0.92271 (+/- 0.04507)
+Recall: 0.95132 (+/- 0.02770)
+Timer unit: 1e-07 s
+
+Total time: 7.54524 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        128.0    128.0      0.0                  print("C:", C)
+   138         1         48.0     48.0      0.0                  print("Gamma:", gamma)
+   139         1   25243861.0 25243861.0     33.5                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        927.0    927.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   25249042.0 25249042.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        722.0    722.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   24956934.0 24956934.0     33.1                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        760.0    760.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 3
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 7.27525 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        144.0    144.0      0.0                  print("C:", C)
+   138         1         48.0     48.0      0.0                  print("Gamma:", gamma)
+   139         1   23800325.0 23800325.0     32.7                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        767.0    767.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   24495383.0 24495383.0     33.7                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1253.0   1253.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   24453301.0 24453301.0     33.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1289.0   1289.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 10
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 8.39096 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        124.0    124.0      0.0                  print("C:", C)
+   138         1         46.0     46.0      0.0                  print("Gamma:", gamma)
+   139         1   27716263.0 27716263.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        802.0    802.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   28310409.0 28310409.0     33.7                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        752.0    752.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   27880023.0 27880023.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1166.0   1166.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 30
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 9.00981 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        133.0    133.0      0.0                  print("C:", C)
+   138         1         47.0     47.0      0.0                  print("Gamma:", gamma)
+   139         1   29693648.0 29693648.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        778.0    778.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   30437837.0 30437837.0     33.8                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        735.0    735.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   29963070.0 29963070.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1863.0   1863.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 3
+Gamma: 100
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 9.36294 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        132.0    132.0      0.0                  print("C:", C)
+   138         1         54.0     54.0      0.0                  print("Gamma:", gamma)
+   139         1   31410101.0 31410101.0     33.5                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1426.0   1426.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   31009390.0 31009390.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1164.0   1164.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   31206368.0 31206368.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        734.0    734.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 0.01
+Accuracy: 0.96767 (+/- 0.01303)
+Precision: 0.92012 (+/- 0.03748)
+Recall: 0.99429 (+/- 0.01746)
+Timer unit: 1e-07 s
+
+Total time: 2.57945 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        147.0    147.0      0.0                  print("C:", C)
+   138         1         71.0     71.0      0.0                  print("Gamma:", gamma)
+   139         1    8451582.0 8451582.0     32.8                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        733.0    733.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1    8660976.0 8660976.0     33.6                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        753.0    753.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1    8679513.0 8679513.0     33.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        719.0    719.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 0.03
+Accuracy: 0.97000 (+/- 0.01429)
+Precision: 0.92276 (+/- 0.03653)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 3.31408 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        271.0    271.0      0.0                  print("C:", C)
+   138         1         71.0     71.0      0.0                  print("Gamma:", gamma)
+   139         1   10923549.0 10923549.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        817.0    817.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   11010637.0 11010637.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        826.0    826.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   11203590.0 11203590.0     33.8                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1067.0   1067.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 0.1
+Accuracy: 0.97034 (+/- 0.01503)
+Precision: 0.92361 (+/- 0.03820)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 4.36517 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        132.0    132.0      0.0                  print("C:", C)
+   138         1         68.0     68.0      0.0                  print("Gamma:", gamma)
+   139         1   14489472.0 14489472.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        822.0    822.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   14703469.0 14703469.0     33.7                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        721.0    721.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   14456299.0 14456299.0     33.1                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        722.0    722.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 0.3
+Accuracy: 0.96834 (+/- 0.01404)
+Precision: 0.92406 (+/- 0.04029)
+Recall: 0.99142 (+/- 0.01334)
+Timer unit: 1e-07 s
+
+Total time: 5.65756 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        123.0    123.0      0.0                  print("C:", C)
+   138         1         67.0     67.0      0.0                  print("Gamma:", gamma)
+   139         1   18792706.0 18792706.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        790.0    790.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   18978991.0 18978991.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       1159.0   1159.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   18801002.0 18801002.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        733.0    733.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 1
+Accuracy: 0.95500 (+/- 0.02217)
+Precision: 0.92271 (+/- 0.04507)
+Recall: 0.95132 (+/- 0.02770)
+Timer unit: 1e-07 s
+
+Total time: 7.41712 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        127.0    127.0      0.0                  print("C:", C)
+   138         1         47.0     47.0      0.0                  print("Gamma:", gamma)
+   139         1   24571500.0 24571500.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        858.0    858.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   24685653.0 24685653.0     33.3                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        864.0    864.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   24911369.0 24911369.0     33.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        782.0    782.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 3
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 7.24667 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        135.0    135.0      0.0                  print("C:", C)
+   138         1         46.0     46.0      0.0                  print("Gamma:", gamma)
+   139         1   24478475.0 24478475.0     33.8                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        769.0    769.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   24246201.0 24246201.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        722.0    722.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   23739618.0 23739618.0     32.8                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        728.0    728.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 10
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 8.19867 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        127.0    127.0      0.0                  print("C:", C)
+   138         1         45.0     45.0      0.0                  print("Gamma:", gamma)
+   139         1   27324759.0 27324759.0     33.3                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        787.0    787.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   27206728.0 27206728.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        733.0    733.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   27452816.0 27452816.0     33.5                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        721.0    721.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 30
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 8.76402 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        139.0    139.0      0.0                  print("C:", C)
+   138         1         45.0     45.0      0.0                  print("Gamma:", gamma)
+   139         1   28945707.0 28945707.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        774.0    774.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   29338559.0 29338559.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        732.0    732.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   29353480.0 29353480.0     33.5                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        738.0    738.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 10
+Gamma: 100
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 9.18343 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        132.0    132.0      0.0                  print("C:", C)
+   138         1         48.0     48.0      0.0                  print("Gamma:", gamma)
+   139         1   30476928.0 30476928.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        796.0    796.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   30674303.0 30674303.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        717.0    717.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   30680336.0 30680336.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1051.0   1051.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 0.01
+Accuracy: 0.97000 (+/- 0.01429)
+Precision: 0.92276 (+/- 0.03653)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 2.29311 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        135.0    135.0      0.0                  print("C:", C)
+   138         1         75.0     75.0      0.0                  print("Gamma:", gamma)
+   139         1    7546613.0 7546613.0     32.9                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        747.0    747.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1    7661688.0 7661688.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        722.0    722.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1    7720399.0 7720399.0     33.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        736.0    736.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 0.03
+Accuracy: 0.97000 (+/- 0.01429)
+Precision: 0.92276 (+/- 0.03653)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 3.08607 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        136.0    136.0      0.0                  print("C:", C)
+   138         1         69.0     69.0      0.0                  print("Gamma:", gamma)
+   139         1   10180373.0 10180373.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        833.0    833.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   10344064.0 10344064.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        721.0    721.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   10333488.0 10333488.0     33.5                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        976.0    976.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 0.1
+Accuracy: 0.97034 (+/- 0.01503)
+Precision: 0.92361 (+/- 0.03820)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 4.35075 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        322.0    322.0      0.0                  print("C:", C)
+   138         1        383.0    383.0      0.0                  print("Gamma:", gamma)
+   139         1   14245831.0 14245831.0     32.7                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        780.0    780.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   14722189.0 14722189.0     33.8                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        779.0    779.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   14536497.0 14536497.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        735.0    735.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 0.3
+Accuracy: 0.96834 (+/- 0.01404)
+Precision: 0.92406 (+/- 0.04029)
+Recall: 0.99142 (+/- 0.01334)
+Timer unit: 1e-07 s
+
+Total time: 5.6671 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        127.0    127.0      0.0                  print("C:", C)
+   138         1         71.0     71.0      0.0                  print("Gamma:", gamma)
+   139         1   18583024.0 18583024.0     32.8                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        847.0    847.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   19265616.0 19265616.0     34.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        743.0    743.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   18819901.0 18819901.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        712.0    712.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 1
+Accuracy: 0.95500 (+/- 0.02217)
+Precision: 0.92271 (+/- 0.04507)
+Recall: 0.95132 (+/- 0.02770)
+Timer unit: 1e-07 s
+
+Total time: 7.37748 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        145.0    145.0      0.0                  print("C:", C)
+   138         1         50.0     50.0      0.0                  print("Gamma:", gamma)
+   139         1   24506889.0 24506889.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        867.0    867.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   24739350.0 24739350.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        727.0    727.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   24526064.0 24526064.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        729.0    729.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 3
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 7.16131 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        133.0    133.0      0.0                  print("C:", C)
+   138         1         48.0     48.0      0.0                  print("Gamma:", gamma)
+   139         1   23971440.0 23971440.0     33.5                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        759.0    759.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   23710909.0 23710909.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        775.0    775.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   23928314.0 23928314.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        723.0    723.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 10
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 8.23797 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        133.0    133.0      0.0                  print("C:", C)
+   138         1         48.0     48.0      0.0                  print("Gamma:", gamma)
+   139         1   26967728.0 26967728.0     32.7                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        799.0    799.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   28034626.0 28034626.0     34.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        730.0    730.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   27374392.0 27374392.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1223.0   1223.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 30
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 8.78348 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        129.0    129.0      0.0                  print("C:", C)
+   138         1         54.0     54.0      0.0                  print("Gamma:", gamma)
+   139         1   29624611.0 29624611.0     33.7                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1014.0   1014.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   29041038.0 29041038.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        736.0    736.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   29166509.0 29166509.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        688.0    688.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 30
+Gamma: 100
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 9.16511 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        126.0    126.0      0.0                  print("C:", C)
+   138         1         49.0     49.0      0.0                  print("Gamma:", gamma)
+   139         1   30411037.0 30411037.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        778.0    778.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   30353930.0 30353930.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        722.0    722.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   30883682.0 30883682.0     33.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        735.0    735.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 0.01
+Accuracy: 0.97000 (+/- 0.01429)
+Precision: 0.92276 (+/- 0.03653)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 2.13391 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        129.0    129.0      0.0                  print("C:", C)
+   138         1         89.0     89.0      0.0                  print("Gamma:", gamma)
+   139         1    7072869.0 7072869.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1111.0   1111.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1    7091371.0 7091371.0     33.2                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        708.0    708.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1    7171785.0 7171785.0     33.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1076.0   1076.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 0.03
+Accuracy: 0.97000 (+/- 0.01429)
+Precision: 0.92276 (+/- 0.03653)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 3.0312 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        129.0    129.0      0.0                  print("C:", C)
+   138         1         71.0     71.0      0.0                  print("Gamma:", gamma)
+   139         1   10046062.0 10046062.0     33.1                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        748.0    748.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   10192728.0 10192728.0     33.6                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        706.0    706.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   10070673.0 10070673.0     33.2                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        869.0    869.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 0.1
+Accuracy: 0.97034 (+/- 0.01503)
+Precision: 0.92361 (+/- 0.03820)
+Recall: 0.99810 (+/- 0.00762)
+Timer unit: 1e-07 s
+
+Total time: 4.49677 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        129.0    129.0      0.0                  print("C:", C)
+   138         1         73.0     73.0      0.0                  print("Gamma:", gamma)
+   139         1   14064219.0 14064219.0     31.3                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        913.0    913.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   14405260.0 14405260.0     32.0                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        721.0    721.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   16495671.0 16495671.0     36.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        744.0    744.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 0.3
+Accuracy: 0.96834 (+/- 0.01404)
+Precision: 0.92406 (+/- 0.04029)
+Recall: 0.99142 (+/- 0.01334)
+Timer unit: 1e-07 s
+
+Total time: 5.64092 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        145.0    145.0      0.0                  print("C:", C)
+   138         1         72.0     72.0      0.0                  print("Gamma:", gamma)
+   139         1   18748046.0 18748046.0     33.2                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        823.0    823.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   18848776.0 18848776.0     33.4                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        726.0    726.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   18809852.0 18809852.0     33.3                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        728.0    728.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 1
+Accuracy: 0.95500 (+/- 0.02217)
+Precision: 0.92271 (+/- 0.04507)
+Recall: 0.95132 (+/- 0.02770)
+Timer unit: 1e-07 s
+
+Total time: 7.38544 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        122.0    122.0      0.0                  print("C:", C)
+   138         1         59.0     59.0      0.0                  print("Gamma:", gamma)
+   139         1   24408429.0 24408429.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1       1103.0   1103.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   24745974.0 24745974.0     33.5                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        741.0    741.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   24697249.0 24697249.0     33.4                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        744.0    744.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 3
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 7.12531 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        126.0    126.0      0.0                  print("C:", C)
+   138         1         58.0     58.0      0.0                  print("Gamma:", gamma)
+   139         1   23506386.0 23506386.0     33.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        771.0    771.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   23727258.0 23727258.0     33.3                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1       2083.0   2083.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   24015679.0 24015679.0     33.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        736.0    736.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 10
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 8.18114 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        147.0    147.0      0.0                  print("C:", C)
+   138         1         48.0     48.0      0.0                  print("Gamma:", gamma)
+   139         1   27286732.0 27286732.0     33.4                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        761.0    761.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   27070537.0 27070537.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        683.0    683.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   27451761.0 27451761.0     33.6                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        760.0    760.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 30
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 8.84122 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        133.0    133.0      0.0                  print("C:", C)
+   138         1         46.0     46.0      0.0                  print("Gamma:", gamma)
+   139         1   28943469.0 28943469.0     32.7                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        782.0    782.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   29689686.0 29689686.0     33.6                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        970.0    970.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   29775495.0 29775495.0     33.7                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1       1602.0   1602.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+C: 100
+Gamma: 100
+Accuracy: 0.94734 (+/- 0.02165)
+Precision: 0.92109 (+/- 0.04548)
+Recall: 0.92938 (+/- 0.03332)
+Timer unit: 1e-07 s
+
+Total time: 9.27299 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: test at line 135
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   135                                                       @profile_each_line
+   136                                                       def test():
+   137         1        363.0    363.0      0.0                  print("C:", C)
+   138         1        146.0    146.0      0.0                  print("Gamma:", gamma)
+   139         1   31490905.0 31490905.0     34.0                  accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140         1        772.0    772.0      0.0                  print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141         1   30678561.0 30678561.0     33.1                  precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142         1        815.0    815.0      0.0                  print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143         1   30557503.0 30557503.0     33.0                  recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144         1        794.0    794.0      0.0                  print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+
+Timer unit: 1e-07 s
+
+Total time: 3.4716 s
+File: c:\Users\Ismail\Documents\Python thesis\CIC_Dataset.py
+Function: model at line 23
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    23                                           @profile_each_line
+    24                                           def model():
+    25         1       3503.0   3503.0      0.0      sys.stdout=open("results_3.txt","w")
+    26         1         65.0     65.0      0.0      testing = ["Destination Port","Flow Duration","Total Fwd Packets","Total Backward Packets",
+    27         1         23.0     23.0      0.0      "Total Length of Fwd Packets","Total Length of Bwd Packets","Fwd Packet Length Max",
+    28         1         15.0     15.0      0.0      "Fwd Packet Length Min","Fwd Packet Length Mean","Fwd Packet Length Std","Bwd Packet Length Max",
+    29         1         15.0     15.0      0.0      "Bwd Packet Length Min","Bwd Packet Length Mean","Bwd Packet Length Std","Flow Bytes/s",
+    30         1         15.0     15.0      0.0      "Flow Packets/s","Flow IAT Mean","Flow IAT Std","Flow IAT Max","Flow IAT Min","Fwd IAT Total",
+    31         1         15.0     15.0      0.0      "Fwd IAT Mean","Fwd IAT Std","Fwd IAT Max","Fwd IAT Min","Bwd IAT Total","Bwd IAT Mean",
+    32         1         15.0     15.0      0.0      "Bwd IAT Std","Bwd IAT Max","Bwd IAT Min","Fwd PSH Flags","Bwd PSH Flags","Fwd URG Flags",
+    33         1         15.0     15.0      0.0      "Bwd URG Flags","Fwd Header length","Bwd Header Length","Fwd Packets/s","Bwd Packets/s",
+    34         1         15.0     15.0      0.0      "Min Packet Length","Max Packet Length","Packet Length Mean","Packet Length Std",
+    35         1         15.0     15.0      0.0      "Packet Length Variance","FIN Flag Count","SYN Flag Count","RST Flag Count","PSH Flag Count",
+    36         1         15.0     15.0      0.0      "ACK Flag Count","URG Flag Count","CWE Flag Count","ECE Flag Count","Down/Up Ratio",
+    37         1         15.0     15.0      0.0      "Average Packet Size","Avg Fwd Segment Size","Avg Bwd Segment Size","Fwd Header Length",
+    38         1        194.0    194.0      0.0      "Fwd Avg Bytes/Bulk","Fwd Avg Packets/Bulk","Fwd Avg Bulk Rate","Bwd Avg Bytes/Bulk",
+    39         1         15.0     15.0      0.0      "Bwd Avg Packets/Bulk","Bwd Avg Bulk Rate","Subflow Fwd Packets","Subflow Fwd Bytes",
+    40         1         15.0     15.0      0.0      "Subflow Bwd Packets","Subflow Bwd Bytes","Init Win bytes forward","Init Win bytes backward",
+    41         1         15.0     15.0      0.0      "act data pkt fwd","min seg size forward","Active Mean","Active Std","Active Max",
+    42         1         23.0     23.0      0.0      "Active Min","Idle Mean","Idle Std","Idle Max","Idle Min","Label"]
+    43                                               #print (len(testing))
+    44         1         29.0     29.0      0.0      import collections
+    45                                               #print ([item for item, count in collections.Counter(testing).items() if count > 1])
+    46                                           
+    47         1         22.0     22.0      0.0      import random
+    48                                               
+    49         1    9920995.0 9920995.0     28.6      df = pd.read_csv("train.csv",header=None,names = testing)
+    50                                               
+    51         1    9183834.0 9183834.0     26.5      df[~df.isin([np.isfinite]).any(1)]
+    52                                               #df[~df.isin([np.inf,-np.inf,np.nan]).any(1)]
+    53                                           
+    54                                           
+    55                                               #print(df.head())
+    56                                           
+    57         1    4940633.0 4940633.0     14.2      df_test = pd.read_csv("testt.csv", header=None,names = testing)
+    58         1    6783305.0 6783305.0     19.5      df_test[~df_test.isin([np.isfinite]).any(1)]
+    59                                               #df_test[~df_test.isin([np.inf,-np.inf,np.nan]).any(1)]
+    60                                           
+    61                                           
+    62                                           
+    63                                           
+    64         1         45.0     45.0      0.0      dtype={'Bwd Packet Length Std': float}
+    65         1         18.0     18.0      0.0      dtype={'Flow Bytes/s': float}
+    66                                              # print ("hi3")
+    67         1       2327.0   2327.0      0.0      labeldf=df['Label']
+    68         1        912.0    912.0      0.0      labeldf_test=df_test['Label']
+    69                                           
+    70                                               # change the label column
+    71         1     419750.0 419750.0      1.2      newlabeldf=labeldf.replace({ 'BENIGN' : 0, 'DDoS' : 1 })
+    72         1     175759.0 175759.0      0.5      newlabeldf_test=labeldf_test.replace({ 'BENIGN' : 0, 'DDoS' : 1 })
+    73                                               # put the new label column back
+    74                                           
+    75         1         24.0     24.0      0.0      newdf = df
+    76         1         14.0     14.0      0.0      newdf_test = df_test
+    77                                           
+    78         1      13174.0  13174.0      0.0      newdf['Label'] = newlabeldf
+    79         1      34787.0  34787.0      0.1      newdf_test['Label'] = newlabeldf_test
+    80                                           
+    81                                           
+    82                                           
+    83                                               #print(newdf['label'].value_counts())
+    84                                           
+    85         1         28.0     28.0      0.0      to_drop_DoS = [0,1]
+    86                                           
+    87         1    1416773.0 1416773.0      4.1      DoS_df=newdf[newdf['Label'].isin(to_drop_DoS)]
+    88                                           
+    89                                               #test
+    90         1     724171.0 724171.0      2.1      DoS_df_test=newdf_test[newdf_test['Label'].isin(to_drop_DoS)]
+    91                                           
+    92         1     222994.0 222994.0      0.6      DoS_df = DoS_df.sample(7000)
+    93         1      95863.0  95863.0      0.3      DoS_df_test = DoS_df_test.sample(3000)
+    94                                           
+    95         1      37434.0  37434.0      0.1      X_DoS = DoS_df.drop('Label',1)
+    96         1       1233.0   1233.0      0.0      Y_DoS = DoS_df.Label
+    97                                           
+    98         1      22307.0  22307.0      0.1      X_DoS_test = DoS_df_test.drop('Label',1)
+    99         1       1043.0   1043.0      0.0      Y_DoS_test = DoS_df_test.Label
+   100                                           
+   101         1        459.0    459.0      0.0      colNames=list(X_DoS)
+   102         1        354.0    354.0      0.0      colNames_test=list(X_DoS_test)
+   103         1      80422.0  80422.0      0.2      X_DoS=np.nan_to_num(X_DoS)
+   104                                              # print(X_DoS)
+   105         1       2085.0   2085.0      0.0      Y_DoS=np.nan_to_num(Y_DoS)
+   106         1        140.0    140.0      0.0      print("hiiii")
+   107         1     130690.0 130690.0      0.4      scaler1 = preprocessing.StandardScaler().fit(X_DoS)
+   108         1      43967.0  43967.0      0.1      X_DoS=scaler1.transform(X_DoS) 
+   109                                           
+   110         1     218552.0 218552.0      0.6      scaler5 = preprocessing.StandardScaler().fit(X_DoS_test)
+   111         1     194764.0 194764.0      0.6      X_DoS_test=scaler5.transform(X_DoS_test) 
+   112                                           
+   113                                              # print("Hi")
+   114                                           
+   115         1         30.0     30.0      0.0      C_values = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30, 100]  
+   116         1         17.0     17.0      0.0      gamma_values = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30, 100]
+   117                                           
+   118         1         15.0     15.0      0.0      best_score = 0  
+   119         1         19.0     19.0      0.0      best_params = {'C': None, 'gamma': None}
+   120                                           
+   121         1         19.0     19.0      0.0      for C in C_values:  
+   122         1         16.0     16.0      0.0          for gamma in gamma_values:
+   123                                                       #clf_Rand_DoS=RandomForestClassifier(n_estimators=10,n_jobs=2)
+   124         1        285.0    285.0      0.0              clf_SVM_DoS=SVC(C=C,gamma=gamma)
+   125                                                       #clf_NN_DoS=MLPClassifier(hidden_layer_sizes=(100, ), activation='relu', solver='adam', alpha=0.0001, batch_size='auto', learning_rate='constant', learning_rate_init=0.001, power_t=0.5, max_iter=200, shuffle=True, random_state=None, tol=0.0001, verbose=False, warm_start=False, momentum=0.9, nesterovs_momentum=True, early_stopping=False, validation_fraction=0.1, beta_1=0.9, beta_2=0.999, epsilon=1e-08, n_iter_no_change=10)
+   126                                           
+   127                                                       #clf_voting_DoS = VotingClassifier(estimators=[('random', clf_Rand_DoS), ('svm', clf_SVM_DoS),('nn',clf_NN_DoS)], voting='hard')
+   128                                                     #  print("Tracing Code 2")
+   129         1      40090.0  40090.0      0.1              X_DoS=np.nan_to_num(X_DoS)
+   130         1        234.0    234.0      0.0              Y_DoS=np.nan_to_num(Y_DoS)
+   131                                                       #clf_NN_DoS.fit(X_DoS, Y_DoS.astype(int))
+   132                                                       #clf_voting_DoS.fit(X_DoS, Y_DoS.astype(int))
+   133                                                       #Y_DoS_pred=clf_voting_DoS.predict(X_DoS_test.astype(int))
+   134                                                       #Y_DoS_pred=clf_NN_DoS.predict(X_DoS_test.astype(int))
+   135         1       2390.0   2390.0      0.0              @profile_each_line
+   136                                                       def test():
+   137                                                           print("C:", C)
+   138                                                           print("Gamma:", gamma)
+   139                                                           accuracy = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='accuracy')
+   140                                                           print("Accuracy: %0.5f (+/- %0.5f)" % (accuracy.mean(), accuracy.std() * 2))
+   141                                                           precision = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='precision')
+   142                                                           print("Precision: %0.5f (+/- %0.5f)" % (precision.mean(), precision.std() * 2))
+   143                                                           recall = cross_val_score(clf_SVM_DoS, X_DoS_test.astype(int), Y_DoS_test.astype(int), cv=10, scoring='recall')
+   144                                                           print("Recall: %0.5f (+/- %0.5f)" % (recall.mean(), recall.std() * 2))
+   145                                                       test()
+
