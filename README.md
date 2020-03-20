@@ -1,2 +1,2 @@
 # Thesis-Project
-This is the repo for thesis 1 progress
+DDoS detection system using ensemble model and featuer selection on NSL-KDD and ISCX12
