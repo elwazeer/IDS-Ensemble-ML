@@ -1,0 +1,3 @@
+,alpha,hidden_layer_sizes,learning_rate,solver
+0,0.001,20,constant,adam
+1,0.001,20,constant,adam
